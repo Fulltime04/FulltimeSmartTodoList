@@ -175,7 +175,7 @@ function retrievFromStorage(){
     let Item_Text_WrapperVar = item_Items.querySelectorAll(".Item_Text_Wrapper");
     let trash = item_Items.querySelectorAll(".del");
     let smallLineVariable = item_Items.querySelectorAll(".smallLine");
-    let NotificationVar = notification();
+    // let NotificationVar = notification();
     let timing;
 
 
@@ -452,6 +452,10 @@ function getFromStorage(){
 }
 
 function notification(){
+    const Notification = document.getElementsByClassName("Notification")[0];
+        if(document.body.contains(Notification)){
+            Notification.remove()
+        }
     let div = document.createElement("div");
         div.className = "Notification";
         div.textContent = "message";

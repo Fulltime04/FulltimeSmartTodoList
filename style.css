@@ -263,28 +263,29 @@
 }
 
 .Notification{
-    width: 38%;
-    min-width: fit-content;
-    height: 60px;
+    white-space: break-spaces;
     background: linear-gradient(20deg,white,gold);
     color: black;
     box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.84);
     position: absolute;
     font-weight: 700;
-    text-wrap: nowrap;
     font-size: 20px;
     text-transform: capitalize;
     top: 80px;
-    right: -800px;
+    right: -20em;
     border-radius: 10px;
     align-content: center;
-    padding: 15px;
+    visibility: hidden;
+    padding:1em 1em;
     font-family: Calibri;
+    opacity:0;
     transition: 0.7s;
 }
 .NotificationDisplay{
     right: 30px;
-    transition: 0.2s;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s ease-out;
 }
 
 .editContent{

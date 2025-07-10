@@ -36,10 +36,6 @@
 
 @media only screen and (max-width: 971px) {
     .Notification{
-        width: 35%;
-        min-width: fit-content;
-        height: 30px;
-        min-height: fit-content;
         font-size: 18px;
 
     }
@@ -58,8 +54,6 @@
 }
 @media only screen and (max-width: 764px) {
     .Notification{
-        height: 29px;
-        width: 33%;
         font-size: 17px;
     }
 }
@@ -73,8 +67,6 @@
         width: 75%;
     }
     .Notification{
-        height: 29px;
-        width: 30%;
         font-size: 14px;
     }
 }
@@ -139,8 +131,6 @@
     }
 
     .Notification{
-        height: 29px;
-        width: 30%;
         font-size: 12px;
     }
     .NotificationDisplay{
@@ -253,8 +243,6 @@
     }
     .Notification{
         font-size: 10px !important;
-        max-width: 25%;
-        height: 5px !important;
     }
 
     .Item_Text_Wrapper{
@@ -332,18 +320,8 @@
         height: 5px;
     }
 
-
     .Notification{
-        width: 35%;
-        height: 30px;
-        background: white;
-        color: black;
         font-size: 8px;
-        top: 100px;
-        display: flex;
-        align-items: center;
-        min-width: fit-content;
-        justify-content: center;
     }
 
     .NotificationDisplay{
