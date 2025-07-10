@@ -1,0 +1,331 @@
+@media only screen and (max-width: 1029.33px) {
+ .main_text{
+     width: 80%;
+     padding: 2px;
+ }
+    .list_Title{
+        font-size: 1em;
+    }
+    #Container{
+        overflow: hidden !important;
+        width: 100%;
+        height: 100dvh !important;
+    }
+    .item_Title{
+        margin: 2px !important;
+        padding-bottom: 2px !important;
+    }
+
+    .list_wrapper{
+        width: 60%;
+    }
+    .Main_Current_Wrapper{
+        width: 70px;
+        height: 70px;
+    }
+    .Progress{
+        height: 7px;
+    }
+}
+
+/*@media only screen and (max-width: 1015px) {*/
+/*.list_wrapper{*/
+/*    width: 50%;*/
+/*}*/
+/*}*/
+
+@media only screen and (max-width: 971px) {
+    .Notification{
+        width: 35%;
+        min-width: fit-content;
+        height: 30px;
+        min-height: fit-content;
+        font-size: 18px;
+
+    }
+}
+@media only screen and (max-width: 875px) {
+        .list_Title{
+            color: white;
+            font-size: .6em !important;
+        }
+}
+
+@media only screen and (max-width: 812px) {
+    .list_wrapper{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 764px) {
+    .Notification{
+        height: 29px;
+        width: 33%;
+        font-size: 17px;
+    }
+}
+/*@media only screen and (max-width: 730px) {*/
+/*    .list_wrapper{*/
+/*        width: 68%;*/
+/*    }*/
+/*}*/
+@media only screen and (max-width: 680px) {
+    .list_wrapper{
+        width: 75%;
+    }
+    .Notification{
+        height: 29px;
+        width: 30%;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 608px) {
+    .list_wrapper{
+        width: 80%;
+    }
+    .list_Input{
+        width: 92%;
+        min-height: fit-content;
+        input{
+            height: 38px;
+            border-radius: 5px;
+        }
+
+    }
+
+    .list_Button {
+        button {
+            padding: 5px 25px;
+        }
+    }
+    .main_body{
+        height: 58%;
+    }
+    .total{
+        font-size: 1em !important;
+    }
+    .del_mark{
+        button{
+            background: gold;
+            padding: 2px;
+            font-size: .7em;
+        }
+    }
+    .main_text{
+        width: 80%;
+        padding: 2px;
+    }
+
+    .item_checkes{
+        input[type = "checkbox"]{
+            height: 17px;
+            accent-color: goldenrod;
+            width: 17px;
+        }
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .list_Title{
+        font-size: .9em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .list_Title{
+        font-size: .8em;
+    }
+    .item_Title{
+        font-size: .8em;
+    }
+
+    .Notification{
+        height: 29px;
+        width: 30%;
+        font-size: 12px;
+    }
+    .NotificationDisplay{
+        right: 15px !important;
+    }
+    .list_wrapper{
+        width: 85%;
+    }
+    .list_typed{
+        width: 90%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .main_body{
+        width: 98%;
+    }
+    .item_Items::-webkit-scrollbar{
+        width: 3px;
+        background: black;
+    }
+
+}
+@media only screen and (max-width: 450px) {
+    .list_Input{
+        width: 92%;
+        min-height: fit-content;
+        input{
+            height: 34px;
+            border-radius: 5px;
+        }
+
+    }
+
+    .list_Button {
+        button {
+            padding: 3px 20px;
+        }
+    }
+    .list_typed{
+        width: 94%;
+    }
+    .Main_Current_Wrapper{
+        width: 65px;
+        height: 65px;
+    }
+    .Progress_wrapper{
+        height: 55%;
+    }
+    .item_Title{
+        font-size: .9em;
+    }
+    .main_body{
+        height: 60%;
+    }
+    .Current_TodoItems_Wrapper{
+        width: 95%;
+        align-self: center;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .list_wrapper{
+        width: 98%;
+    }
+    #Container{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 373px) {
+    .list_Title{
+        font-size: .7em;
+    }
+    .item_Items{
+        padding: 10px 1px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .del_mark{
+        gap: 0 !important;
+        button{
+            background: gold;
+            padding: 2px;
+            font-size: .5em;
+        }
+    }
+}
+@media only screen and (max-width: 345px){
+    .main_text{
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: fit-content;
+    }
+
+    .Item_Text_Wrapper{
+        /*border: 2px solid goldenrod;*/
+        height: 60%;
+        width: 100%;
+
+        p{
+            font-size: .7em !important;
+        }
+    }
+    .list_Input{
+
+        input{
+            height: 30px;
+            border-radius: 5px;
+        }
+
+    }
+    .days_Ago{
+        height: 40%;
+        width: 100%;
+        /*border: 2px silver solid;*/
+        text-align: right !important;
+    }
+    .NotificationDisplay{
+        right: 10px !important;
+    }
+    .Notification{
+        font-size: 10px !important;
+    }
+
+    .Items_Wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        flex: 50px 0 0;
+        min-height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .del_mark{
+        /*border: 2px solid red !important;*/
+        height: fit-content;
+        width: 8%;
+
+        button{
+            width: 100%;
+        }
+    }
+
+    .list_Title{
+        font-size: .5em;
+    }
+    .Main_Current_Wrapper{
+        width: 50px;
+        height: 50px;
+    }
+    .Current_Total_Wrapper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Current{
+        font-size: .7em !important;
+    }
+    .total{
+        font-size: .9em !important;
+    }
+    .Progress{
+        height: 5px;
+    }
+
+
+    .Notification{
+        width: 35%;
+        height: 30px;
+        background: white;
+        color: black;
+        font-size: 8px;
+        top: 100px;
+        display: flex;
+        align-items: center;
+        min-width: fit-content;
+        justify-content: center;
+    }
+
+    .NotificationDisplay{
+        right: 5px;
+    }
+
+}
