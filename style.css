@@ -144,6 +144,7 @@
     justify-self: center;
     height: 100%;
     color: black;
+
     /*border: 4px groove white;*/
     min-height: fit-content;
     /*padding: 4px;*/
@@ -237,7 +238,8 @@
     /*border-top-right-radius: 10px;*/
     border-top-left-radius: 10px;
     /*border-right: 2px solid white;*/
-    /*border-left: 2px solid white;*/
+
+    border-left: 2px solid white;
 }
 .main_text{
     min-height: fit-content;

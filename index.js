@@ -26,11 +26,13 @@ Clear_btn_Function()
         }
     })
 
-// window.addEventListener("keydown", function(e){
-//         if (e.key === "Enter") {
-//             list_btn.click()
-//         }
-// })
+document.addEventListener("keydown", function(e){
+        if (e.key === "Enter") {
+            if(inputItem.value == ""){
+                list_btn.click()
+            }
+        }
+})
 
 Clear_btn.addEventListener("click", function(){
 
@@ -78,9 +80,12 @@ list_btn.addEventListener("click", function () {
 
     users.push(newTask);
 
+
     inputItem.value = "";
     Clear_btn_Function();
     localStorage.setItem("userData", JSON.stringify(users));
+
+    // document.querySelector(".item_Items").scroll(0,0)
     retrievFromStorage();
     TotalTask();
 });
@@ -320,7 +325,7 @@ function retrievFromStorage(){
     }
     Current();
 
-    function Domchecked(){
+
 
         let AllCompleteTasksDom = FinishedStorage();
 
@@ -340,8 +345,8 @@ function retrievFromStorage(){
 
         });
 
-    }
-    Domchecked()
+
+
 
     function itOkay(){
         let AllCompleteTasks = FinishedStorage();
@@ -467,7 +472,6 @@ let total = document.querySelector(".total");
 
 function TotalTask(){
     let Totals = getFromStorage();
-
      total.innerHTML = Totals.length;
 }
 
@@ -484,7 +488,6 @@ function FinishedStorage(){
 
 document.addEventListener("DOMContentLoaded", function (event) {
     retrievFromStorage();
-    // Domchecked()
 })
 
 // function CounterCheck(){
