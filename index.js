@@ -271,6 +271,21 @@ function retrievFromStorage(){
 
     });
 
+    itemText.forEach((logo, t) => {
+        AllCompleteTasksDom.forEach((item, e) => {
+            if(item.text.toLowerCase() === logo.innerHTML.toLowerCase()){
+                if(checkboxContent[t].checked === false){
+                    checkboxContent[t].checked = true;
+                    logo.style.textDecoration = "line-through";
+                    logo.style.color = "gold";
+                    updateProgress();
+                    disableAllTrashButtons(t);
+                }
+            }
+        })
+
+    });
+
     document.addEventListener("keydown", function(event){
         if(event.key === "Enter"){
           editText.forEach((item, e) => {
@@ -296,7 +311,8 @@ function retrievFromStorage(){
 
                 let task = existing || {
                     id: Date.now(),
-                    text: taskText
+                    text: taskText,
+                    completed: false
                 };
 
                 if (item.checked === false) {
@@ -324,34 +340,17 @@ function retrievFromStorage(){
         return checkboxContent;
     }
     Current();
-
-
-
-        let AllCompleteTasksDom = FinishedStorage();
-
-            itemText.forEach((logo, t) => {
-                AllCompleteTasksDom.forEach((item, e) => {
-                    if(item.text === logo.innerHTML.toLowerCase()){
-                        if(checkboxContent[t].checked === false){
-                            checkboxContent[t].checked = true;
-                            logo.style.textDecoration = "line-through";
-                            logo.style.color = "gold";
-                            updateProgress();
-                            disableAllTrashButtons(t);
-                        }
-                    }
-            })
-
-
-        });
-
-
+    document.addEventListener("DOMContentLoaded", function(event){
+        Current();
+    })
 
 
     function itOkay(){
         let AllCompleteTasks = FinishedStorage();
         Currents.innerHTML = AllCompleteTasks.length;
     }
+
+
     itOkay();
 
 
@@ -414,7 +413,7 @@ eventing()
 
             // if (!matchingTask) return;
 
-            let updatedFinished = allFinished.filter(task => task.text !== matchingTask);
+            let updatedFinished = allFinished.filter(task => task.text !== itemToDeleteText);
 
             localStorage.setItem("UserFinished", JSON.stringify(updatedFinished));
 
@@ -474,6 +473,12 @@ function TotalTask(){
     let Totals = getFromStorage();
      total.innerHTML = Totals.length;
 }
+let itemText = item_Items.querySelectorAll(".itemText");
+let AllCompleteTasksDom = FinishedStorage();
+let checkboxContent = item_Items.querySelectorAll(".checkbox");
+let main_textVar = item_Items.querySelectorAll(".main_text");
+let trash = item_Items.querySelectorAll(".del");
+
 
 
 
