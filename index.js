@@ -78,8 +78,7 @@ list_btn.addEventListener("click", function () {
         timestamp: now
     };
 
-    users.push(newTask);
-
+    users.unshift(newTask);
 
     inputItem.value = "";
     Clear_btn_Function();
@@ -422,7 +421,8 @@ eventing()
 
 
             let stateRemove = getFromStorage();
-
+            eventing()
+            updateProgress()
             let updatedState = stateRemove.filter((item, i) => item.text !== itemText[x].innerHTML);
 
 
